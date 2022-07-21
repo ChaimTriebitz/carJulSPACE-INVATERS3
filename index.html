@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SPACE INVADERS</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body onkeydown="onKeyDown(event)">
+		<div class="hedder">
+			<h1>
+				Space invaders <span>♆ :</span>
+				<span class="score">0</span>
+			</h1>
+		</div>
+
+		<div class="start">
+			<h1>Wellcom To Space👽</h1>
+			<button class="start-btn" onclick="init()">▶</button>
+			<h2 style="font-weight: alien">key's [(←)(→)(—)(N)(X)]</h2>
+		</div>
+		<div hidden class="modal">
+			<h1>hello world</h1>
+			<button class="restart-btn" onclick="restart()">▶</button>
+		</div>
+		<div class="game-board">
+			<table>
+				<tbody class="board"></tbody>
+			</table>
+		</div>
+
+		<script src="utils.js"></script>
+		<script src="hero.js"></script>
+		<script src="alien.js"></script>
+		<script src="game.js"></script>
+	</body>
+</html>
